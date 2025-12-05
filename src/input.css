@@ -1,1 +1,4 @@
 @import "tailwindcss";
+@theme {
+  --ta-2: 2/4;
+}

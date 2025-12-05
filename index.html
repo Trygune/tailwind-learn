@@ -25,10 +25,118 @@
     </section>
     <hr>
     <h1 class="text-3xl font-bold">layout</h1>
-    <section>
-        <h2>aspect-ratio</h2>
+    <section class="p-5">
         <div>
-            
+            <h2 class="text-2xl">aspect-ratio</h2>
+            <img class="aspect-3/2 inline-block" src="/img/img.jpg" width="300" height="300" />
+            <img class="aspect-square inline-block" src="/img/img.jpg" width="300" height="300" />
+            <img class="aspect-video inline-block" src="/img/img.jpg" width="300" height="300" />
+            <img class="aspect-8/1 inline-block" src="/img/img.jpg" width="300" height="300" />
+            <img class="aspect-auto inline-block" src="/img/img.jpg" width="300" height="300" />
+            <img class="aspect-[calc(4*3+1)/5] inline-block" src="/img/img.jpg" width="300" height="300" />
+            <img class="aspect-(--ta-2) inline-block" src="/img/img.jpg" width="300" height="300" />
+            <img class="aspect-1/2 xl:aspect-2/1 inline-block" src="/img/img.jpg" width="300" height="300" />
+        </div>
+        <hr>
+        <div>
+            <h2 class="text-2xl">columns</h2>
+            <h3 class="text-xl">number</h3>
+            <div class="columns-3">
+                <img class="aspect-3/2" src="/img/img.jpg" />
+                <img class="aspect-square" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+            </div>
+            <div class="columns-5">
+                <img class="aspect-3/2" src="/img/img.jpg" />
+                <img class="aspect-square" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+                <img class="aspect-square" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+            </div>
+            <div class="columns-4">
+                <img class="aspect-3/2" src="/img/img.jpg" />
+                <img class="aspect-3/2" src="/img/img.jpg" />
+                <img class="aspect-square" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+                <img class="aspect-square" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+            </div>
+            <div class="columns-auto">
+                <img class="aspect-3/2" src="/img/img.jpg" />
+                <img class="aspect-square" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+            </div>
+            <div class="columns-3">
+                <img class="aspect-video" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+            </div>
+            <h3 class="text-xl">width</h3>
+            <div class="columns-3xs">
+                <img class="aspect-video" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+            </div>
+            <div class="columns-lg">
+                <img class="aspect-video" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+            </div>
+            <div class="columns-2xl">
+                <img class="aspect-video" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+            </div>
+            <!-- <div class="columns-2lg">
+                <img class="aspect-video" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+            </div> -->
+            <h3 class="text-xl">Setting the column gap</h3>
+            <div class="columns-3 gap-1">
+                <img class="aspect-3/2" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+                <img class="aspect-3/2" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+            </div>
+            <div class="columns-3 gap-80">
+                <img class="aspect-3/2" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+                <img class="aspect-3/2" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+            </div>
+            <div class="columns-4 gap-10">
+                <img class="aspect-3/2" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+                <img class="aspect-3/2" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+            </div>
+            <div class="columns-[200px]">
+                <img class="aspect-3/2" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+                <img class="aspect-3/2" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+            </div>
+            <div class="columns-2 xl:columns-3">
+                <img class="aspect-3/2" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+                <img class="aspect-3/2" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+                <img class="aspect-video" src="/img/img.jpg" />
+            </div>
+        </div>
+        <hr>
+        <div>
+            <h2 class="text-2xl">break-after</h2>
         </div>
     </section>
 </body>

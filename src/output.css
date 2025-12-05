@@ -7,24 +7,29 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-sky-500: oklch(68.5% 0.169 237.323);
-    --color-sky-700: oklch(50% 0.134 242.749);
     --color-slate-800: oklch(27.9% 0.041 260.031);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --container-3xs: 16rem;
     --container-sm: 24rem;
+    --container-lg: 32rem;
+    --container-2xl: 42rem;
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --font-weight-medium: 500;
     --font-weight-bold: 700;
     --radius-xl: 0.75rem;
+    --aspect-video: 16 / 9;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --ta-2: 2/4;
   }
 }
 @layer base {
@@ -182,6 +187,36 @@
   .flex {
     display: flex;
   }
+  .inline-block {
+    display: inline-block;
+  }
+  .table {
+    display: table;
+  }
+  .aspect-\(--ta-2\) {
+    aspect-ratio: var(--ta-2);
+  }
+  .aspect-1\/2 {
+    aspect-ratio: 1/2;
+  }
+  .aspect-3\/2 {
+    aspect-ratio: 3/2;
+  }
+  .aspect-8\/1 {
+    aspect-ratio: 8/1;
+  }
+  .aspect-\[calc\(4\*3\+1\)\/5\] {
+    aspect-ratio: calc(4 * 3 + 1)/5;
+  }
+  .aspect-auto {
+    aspect-ratio: auto;
+  }
+  .aspect-square {
+    aspect-ratio: 1 / 1;
+  }
+  .aspect-video {
+    aspect-ratio: var(--aspect-video);
+  }
   .size-12 {
     width: calc(var(--spacing) * 12);
     height: calc(var(--spacing) * 12);
@@ -189,23 +224,85 @@
   .max-w-sm {
     max-width: var(--container-sm);
   }
+  .flex-shrink {
+    flex-shrink: 1;
+  }
   .shrink-0 {
     flex-shrink: 0;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
+  }
+  .columns-2 {
+    columns: 2;
+  }
+  .columns-2xl {
+    columns: var(--container-2xl);
+  }
+  .columns-3 {
+    columns: 3;
+  }
+  .columns-3xs {
+    columns: var(--container-3xs);
+  }
+  .columns-4 {
+    columns: 4;
+  }
+  .columns-5 {
+    columns: 5;
+  }
+  .columns-\[200px\] {
+    columns: 200px;
+  }
+  .columns-auto {
+    columns: auto;
+  }
+  .columns-lg {
+    columns: var(--container-lg);
   }
   .items-center {
     align-items: center;
   }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
+  }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
+  }
+  .gap-80 {
+    gap: calc(var(--spacing) * 80);
+  }
   .gap-x-4 {
     column-gap: calc(var(--spacing) * 4);
+  }
+  .gap-x-20 {
+    column-gap: calc(var(--spacing) * 20);
+  }
+  .gap-y-20 {
+    row-gap: calc(var(--spacing) * 20);
   }
   .rounded-xl {
     border-radius: var(--radius-xl);
   }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .bg-white {
     background-color: var(--color-white);
   }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
   .p-6 {
     padding: calc(var(--spacing) * 6);
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
   .text-3xl {
     font-size: var(--text-3xl);
@@ -240,10 +337,38 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+  .outline-black {
+    outline-color: var(--color-black);
+  }
   .outline-black\/5 {
     outline-color: color-mix(in srgb, #000 5%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       outline-color: color-mix(in oklab, var(--color-black) 5%, transparent);
+    }
+  }
+  .md\:aspect-2\/1 {
+    @media (width >= 48rem) {
+      aspect-ratio: 2/1;
+    }
+  }
+  .md\:aspect-video {
+    @media (width >= 48rem) {
+      aspect-ratio: var(--aspect-video);
+    }
+  }
+  .xl\:aspect-2\/1 {
+    @media (width >= 80rem) {
+      aspect-ratio: 2/1;
+    }
+  }
+  .xl\:columns-2 {
+    @media (width >= 80rem) {
+      columns: 2;
+    }
+  }
+  .xl\:columns-3 {
+    @media (width >= 80rem) {
+      columns: 3;
     }
   }
   .dark\:bg-slate-800 {
@@ -280,6 +405,11 @@
       }
     }
   }
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }
 @property --tw-font-weight {
   syntax: "*";
@@ -358,6 +488,7 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
       --tw-font-weight: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <title>Tailwind</title>
+</head>
+
+<body>
+    <h1 class="text-3xl font-bold">box</h1>
+    <section class="p-5">
+        <h2 class="text-2xl">box-decoration-break</h2>
+        <p>utilities to control whether properties like background, border, border-image, box-shadow, clip-path, margin,
+            and padding should be rendered as if the element were one continuous fragment, or distinct blocks:</p>
+        <hr>
+        <div class="columns-2">
+            <div>
+                <span class="box-decoration-slice bg-linear-to-r from-indigo-600 to-pink-500 px-2 text-white">
+                    Hello<br />World
+                </span>
+            </div>
+            <div>
+                <span class="box-decoration-clone bg-linear-to-r from-indigo-600 to-pink-500 px-2 text-white">
+                    Hello<br />World
+                </span>
+            </div>
+        </div>
+    </section>
+    <section class="p-5">
+        <h2 class="text-2xl">box-sizing</h2>
+        <hr>
+        <div>
+            <div class="box-border size-32 border-4 p-4 bg-sky-400 m-2">
+                <!-- ... -->
+            </div>
+            <p>This means a 100px × 100px element with a 2px border and 4px of padding on all sides will be rendered as
+                100px × 100px, with an internal content area of 88px × 88px:</p>
+        </div>
+        <div>
+            <div class="box-content size-32 border-4 p-4 bg-sky-400 m-2">
+                <!-- ... -->
+            </div>
+            <p>This means a 100px × 100px element with a 2px border and 4px of padding on all sides will actually be rendered as 112px × 112px, with an internal content area of 100px × 100px:</p>
+        </div>
+    </section>
+</body>
+
+</html>

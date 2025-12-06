@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <title>Tailwind</title>
+</head>
+
+<body>
+    <section class="p-5">
+        <div>
+            <h1 class="text-3xl font-bold">isolation</h1>
+            <hr>
+            <p>Use the isolate and isolation-auto utilities to control whether an element should explicitly create a new
+                stacking context:</p>
+            <p>isolation: doesn't blend with outside</p>
+            <div class="isolate w-10 h-10 border-2">
+                <div class="bg-red-500 mix-blend-multiply w-5 h-5"></div>
+            </div>
+            <br>
+            <div class="bg-red-500 mix-blend-multiply w-20 h-20"></div>
+        </div>
+    </section>
+</body>
+
+</html>

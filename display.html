@@ -85,14 +85,142 @@
         <h2 class="text-2xl">Flow Root</h2>
         <hr>
         <div>
+            <p>المنت بچه‌هاش رو کامل در بر بگیره</p>
+            <p>parent element covers its childs completely like with margins and ...</p>
             <div class="p-4">
-                <div class="flow-root ...">
-                    <div class="my-4 ...">Well, let me tell you something, ...</div>
+                <div class="flow-root bg-amber-800">
+                    <div class="my-4 border-2">Well, let me tell you something, ...</div>
                 </div>
-                <div class="flow-root ...">
-                    <div class="my-4 ...">Sure, go ahead, laugh if you want...</div>
+                <div class="flow-root bg-amber-300">
+                    <div class="my-4 border-2">Sure, go ahead, laugh if you want...</div>
                 </div>
             </div>
+        </div>
+        <h2 class="text-2xl">flex</h2>
+        <hr>
+        <div class="flex items-center justify-center">
+            <img src="./img/img.jpg" height="200" width="200" />
+            <div>
+                <strong>Andrew Alfred</strong>
+                <span>Technical advisor</span>
+            </div>
+        </div>
+        <h2 class="text-2xl">inline-flex</h2>
+        <p class="text-red-500">When align-items is set to baseline, the participating items in a flex container or grid
+            track will align themselves so that their content's baselines are on the same horizontal line</p>
+        <hr>
+        <p>
+            Today I spent most of the day researching ways to take advantage of the fact that bottles can be returned
+            for 10 cents in Michigan, but only 5 cents here. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Ullam animi aliquid exercitationem quidem odio cupiditate excepturi vel aut quasi dolorum laborum sapiente
+            doloremque voluptas itaque, ratione voluptatibus, asperiores repellat quaerat?
+            <span class="inline-flex items-baseline">
+                <img src="/img/img.jpg" class="mx-1 size-5 self-center rounded-full" />
+                <span>ICHIGO</span>
+            </span>
+            keeps telling me there is no way to make it work, that he has run the numbers on every possible approach,
+            but I just have to believe there's a way to make it work, there's simply too much opportunity here. Lorem
+            ipsum dolor, sit amet consectetur adipisicing elit. Quae dolorem aliquam unde omnis totam esse non fugit
+            ipsum pariatur inventore, atque perspiciatis nemo. Consequatur numquam aut accusantium temporibus pariatur
+            fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat necessitatibus sit itaque vero,
+            voluptatum ab labore repudiandae quisquam rerum voluptatibus illo velit qui asperiores fugit molestias
+            dolore quasi. Deserunt, architecto?
+        </p>
+        <h2 class="text-2xl">grid</h2>
+        <hr>
+        <div class="grid grid-cols-3 grid-rows-3 gap-4">
+            <div class="bg-amber-200">01</div>
+            <div class="bg-amber-200">02</div>
+            <div class="bg-amber-200">03</div>
+            <div class="bg-amber-200">04</div>
+            <div class="bg-amber-200">05</div>
+            <div class="bg-amber-200">06</div>
+            <div class="bg-amber-200">07</div>
+            <div class="bg-amber-200">08</div>
+            <div class="bg-amber-200">09</div>
+        </div>
+        <h2 class="text-2xl">inline-grid</h2>
+        <hr>
+        <span class="inline-grid grid-cols-3 gap-4">
+            <span class="bg-fuchsia-500">01</span>
+            <span class="bg-fuchsia-500">02</span>
+            <span class="bg-fuchsia-500">03</span>
+            <span class="bg-fuchsia-500">04</span>
+            <span class="bg-fuchsia-500">05</span>
+            <span class="bg-fuchsia-500">06</span>
+        </span>
+        <span class="inline-grid grid-cols-2 gap-10">
+            <span class="bg-fuchsia-500">01</span>
+            <span class="bg-fuchsia-500">02</span>
+            <span class="bg-fuchsia-500">03</span>
+            <span class="bg-fuchsia-500">04</span>
+            <span class="bg-fuchsia-500">05</span>
+            <span class="bg-fuchsia-500">06</span>
+        </span>
+        <h2 class="text-2xl">contents</h2>
+        <p>like parents doesn't exists but its childern do</p>
+        <p>when you don't want the parent to effect the layout directly</p>
+        <hr>
+        <div class="flex ...">
+            <div class="flex-1 ...">01</div>
+            <div class="contents">
+                <div class="flex-1 ...">02</div>
+                <div class="flex-1 ...">03</div>
+            </div>
+            <div class="flex-1 ...">04</div>
+        </div>
+        <h2 class="text-2xl">table</h2>
+        <p>table, table-row, table-cell, table-caption, table-column, table-column-group, table-header-group,
+            table-row-group, and table-footer-group utilities <br> to create elements that behave like their respective
+            table elements:</p>
+        <hr>
+        <div class="table-caption">tester</div>
+        <div class="table w-full ...">
+            <div class="table-header-group ...">
+                <div class="table-row">
+                    <div class="table-cell text-left ...">Song</div>
+                    <div class="table-cell text-left ...">Artist</div>
+                    <div class="table-cell text-left ...">Year</div>
+                </div>
+            </div>
+            <div class="table-row-group">
+                <div class="table-row">
+                    <div class="table-cell ...">The Sliding Mr. Bones (Next Stop, Pottersville)</div>
+                    <div class="table-cell ...">Malcolm Lockyer</div>
+                    <div class="table-cell ...">1961</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell ...">Witchy Woman</div>
+                    <div class="table-cell ...">The Eagles</div>
+                    <div class="table-cell ...">1972</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell ...">Shining Star</div>
+                    <div class="table-cell ...">Earth, Wind, and Fire</div>
+                    <div class="table-cell ...">1975</div>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-2xl">hidden</h2>
+        <hr>
+        <div class="flex ...">
+            <div class="hidden ...">01</div>
+            <div>02</div>
+            <div>03</div>
+        </div>
+        <h2 class="text-2xl">Screen-reader only</h2>
+        <p>Use sr-only to hide an element visually without hiding it from screen readers:</p>
+        <p>Use not-sr-only to undo sr-only, making an element visible to sighted users as well as screen readers:</p>
+        <hr>
+        <a href="#">
+            <img src="./img/logo.svg" alt="" width="200" height="200">
+            <span class="sr-only xl:not-sr-only">Settings (shown inly in big screens)</span>
+        </a>
+        <h2 class="text-2xl">Responsive design</h2>
+        <p>Prefix a display utility with a breakpoint variant like md: to only apply the utility at medium screen sizes
+            and above:</p>
+        <hr>
+        <div class="flex md:inline-flex bg-amber-950 w-full h-8">
         </div>
     </section>
 </body>

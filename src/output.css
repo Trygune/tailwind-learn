@@ -216,6 +216,21 @@
     clip-path: none;
     white-space: normal;
   }
+  .float-end {
+    float: inline-end;
+  }
+  .float-left {
+    float: left;
+  }
+  .float-none {
+    float: none;
+  }
+  .float-right {
+    float: right;
+  }
+  .float-start {
+    float: inline-start;
+  }
   .container {
     width: 100%;
     @media (width >= 40rem) {

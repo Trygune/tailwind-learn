@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <title>Tailwind</title>
+</head>
+
+<body>
+    <h1 class="text-3xl font-bold">overflow</h1>
+    <p>Utilities for controlling how an element handles content that is too large for the container.</p>
+    <section class="p-5">
+        <div>
+            <h2 class="text-2xl">Showing content that overflows</h2>
+            <p>Use the overflow-visible utility to prevent content within an element from being clipped:</p>
+            <hr>
+            <div class="overflow-visible border-2 w-20 h-20">
+                <img class="h-32" src="/img/img.jpg" />
+            </div>
+        </div>
+        <div class="border-2">
+            <h2 class="text-2xl">Hiding content that overflows</h2>
+            <hr>
+            <div class="overflow-hidden w-20 h-20 float-right">
+                <img class="h-52 w-52" src="/img/img.jpg" />
+            </div>
+        </div>
+        <div class="border-2">
+            <h2 class="text-2xl">Scrolling if needed</h2>
+            <hr>
+            <div class="overflow-auto w-30 h-30">
+                <img class="h-52" src="/img/img.jpg" />
+            </div>
+        </div>
+        <div class="border-2">
+            <h2 class="text-2xl">Scrolling horizontally if needed</h2>
+            <hr>
+            <div class="overflow-x-auto w-30 h-40">
+                <img class="max-w-52" src="/img/img.jpg" />
+            </div>
+        </div>
+        <div class="border-2">
+            <h2 class="text-2xl">Scrolling vertically if needed</h2>
+            <hr>
+            <div class="overflow-y-auto w-52 h-30">
+                <img class="h-52" src="/img/img.jpg" />
+            </div>
+        </div>
+        <div class="border-2">
+            <h2 class="text-2xl">Scrolling horizontally always</h2>
+            <hr>
+            <div class="overflow-x-scroll w-30 h-40">
+                <img class="max-w-52" src="/img/img.jpg" />
+            </div>
+        </div>
+        <div class="border-2">
+            <h2 class="text-2xl">Scrolling vertically always</h2>
+            <hr>
+            <div class="overflow-y-scroll w-52 h-30">
+                <img class="h-52" src="/img/img.jpg" />
+            </div>
+        </div>
+        <div class="border-2">
+            <h2 class="text-2xl">Scrolling in all directions</h2>
+            <hr>
+            <div class="overflow-scroll w-28 h-20">
+                <img class="h-52 w-52 max-w-52" src="/img/img.jpg" />
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

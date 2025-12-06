@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <title>Tailwind</title>
+</head>
+
+<body>
+    <h1 class="text-3xl font-bold">object-fit</h1>
+    <section class="p-5">
+        <div>
+            <h2 class="text-2xl">object-cover</h2>
+            <p>Use the object-cover utility to <span class="underline text-red-700">resize</span> an element's content
+                to cover its container:</p>
+            <hr>
+            <img class="h-100 w-96 object-cover border-2" src="/img/img.jpg" />
+        </div>
+        <div>
+            <h2 class="text-2xl">object-contain</h2>
+            <p>Use the object-contain utility to resize an element's content to stay contained within its container:</p>
+            <hr>
+            <img class="h-40 w-96 object-contain border-2" src="/img/img.jpg" />
+        </div>
+        <div>
+            <h2 class="text-2xl">object-fill</h2>
+            <p>Use the object-fill utility to stretch an element's content to fit its container:</p>
+            <hr>
+            <img class="h-100 w-80 object-fill border-2" src="/img/img.jpg" />
+        </div>
+        <div>
+            <h2 class="text-2xl">object-scale-down</h2>
+            <p>Use the object-scale-down utility to display an element's content at its original size but scale it down
+                to fit its container if necessary:</p>
+            <hr>
+            <img class="h-100 w-80 object-scale-down border-2" src="/img/img.jpg" />
+        </div>
+        <div>
+            <h2 class="text-2xl">object-none</h2>
+            <p>Use the object-none utility to display an element's content at its original size ignoring the container
+                size:</p>
+            <hr>
+            <img class="h-100 w-80 object-none border-2" src="/img/img.jpg" />
+        </div>
+    </section>
+</body>
+
+</html>

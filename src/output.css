@@ -231,6 +231,24 @@
   .float-start {
     float: inline-start;
   }
+  .clear-both {
+    clear: both;
+  }
+  .clear-end {
+    clear: inline-end;
+  }
+  .clear-left {
+    clear: left;
+  }
+  .clear-none {
+    clear: none;
+  }
+  .clear-right {
+    clear: right;
+  }
+  .clear-start {
+    clear: inline-start;
+  }
   .container {
     width: 100%;
     @media (width >= 40rem) {

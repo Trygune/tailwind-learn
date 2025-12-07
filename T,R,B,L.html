@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <title>Tailwind</title>
+</head>
+
+<body>
+    <h1 class="text-3xl font-bold">top / right / bottom / left</h1>
+    <p>Utilities for controlling the placement of positioned elements.</p>
+    <section class="p-5">
+        <div>
+            <h2 class="text-2xl">Basic example</h2>
+            <hr>
+            <!-- Pin to top left corner -->
+            <div class="relative size-32 bg-pink-50 inline-block m-2">
+                <div class="absolute bg-red-200 top-0 left-0 size-16 ...">01</div>
+            </div>
+            <!-- Span top edge -->
+            <div class="relative size-32 bg-pink-50 inline-block m-2">
+                <div class="absolute bg-red-200 inset-x-0 top-0 h-16 ...">02</div>
+            </div>
+            <!-- Pin to top right corner -->
+            <div class="relative size-32 bg-pink-50 inline-block m-2">
+                <div class="absolute bg-red-200 top-0 right-0 size-16 ...">03</div>
+            </div>
+            <!-- Span left edge -->
+            <div class="relative size-32 bg-pink-50 inline-block m-2">
+                <div class="absolute bg-red-200 inset-y-0 left-0 w-16 ...">04</div>
+            </div>
+            <!-- Fill entire parent -->
+            <div class="relative size-32 bg-pink-50 inline-block m-2">
+                <div class="absolute bg-red-200 inset-0 ...">05</div>
+            </div>
+            <!-- Span right edge -->
+            <div class="relative size-32 bg-pink-50 inline-block m-2">
+                <div class="absolute bg-red-200 inset-y-0 right-0 w-16 ...">06</div>
+            </div>
+            <!-- Pin to bottom left corner -->
+            <div class="relative size-32 bg-pink-50 inline-block m-2">
+                <div class="absolute bg-red-200 bottom-0 left-0 size-16 ...">07</div>
+            </div>
+            <!-- Span bottom edge -->
+            <div class="relative size-32 bg-pink-50 inline-block m-2">
+                <div class="absolute bg-red-200 inset-x-0 bottom-0 h-16 ...">08</div>
+            </div>
+            <!-- Pin to bottom right corner -->
+            <div class="relative size-32 bg-pink-50 inline-block m-2">
+                <div class="absolute bg-red-200 right-0 bottom-0 size-16 ...">09</div>
+            </div>
+        </div>
+        <div>
+            <h2 class="text-2xl">Using negative values</h2>
+            <hr>
+            <!-- Pin to top left corner -->
+            <div class="relative size-32 bg-pink-50 inline-block m-2">
+                <div class="absolute bg-red-200 -top-4 -left-4 size-16 ...">01</div>
+            </div>
+        </div>
+        <div>
+            <h2 class="text-2xl">Using logical properties</h2>
+            <hr>
+            <!-- Pin to top left corner -->
+            <div dir="ltr" class="relative size-32 bg-pink-50 inline-block m-2">
+                <div class="absolute bg-red-200 start-0 top-0 size-16 ...">01</div>
+            </div>
+            <div dir="rtl" class="relative size-32 bg-pink-50 inline-block m-2">
+                <div class="absolute bg-red-200 start-0 top-0 size-16 ...">01</div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

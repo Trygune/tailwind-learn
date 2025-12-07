@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <title>Tailwind</title>
+</head>
+
+<body>
+    <h1 class="text-3xl font-bold">z-index</h1>
+    <section class="p-5">
+        <div>
+            <h2 class="text-2xl">Basic example</h2>
+            <hr>
+            <div dir="rtl" class="relative h-28">
+                <div class="inline-block z-40 size-24 rounded-2xl bg-pink-100 absolute top-0 left-0  ...">05</div>
+                <div class="inline-block z-30 size-24 rounded-2xl bg-pink-200 absolute top-0 left-10  ...">04</div>
+                <div class="inline-block z-20 size-24 rounded-2xl bg-pink-300 absolute top-0 left-20  ...">03</div>
+                <div class="inline-block z-10 size-24 rounded-2xl bg-pink-400 absolute top-0 left-30  ...">02</div>
+                <div class="inline-block z-0  size-24 rounded-2xl bg-pink-500 absolute top-0 left-40 ...">01</div>
+            </div>
+        </div>
+        <div>
+            <h2 class="text-2xl">Using negative values</h2>
+            <hr>
+            <div class="relative h-28">
+                <div class="inline-block size-24 rounded-2xl bg-pink-100 absolute top-0 left-0  ...">05</div>
+                <div class="inline-block size-24 rounded-2xl bg-pink-200 absolute top-0 left-20  ...">04</div>
+                <div class="inline-block -z-20 size-24 rounded-2xl bg-pink-300 absolute top-0 left-40  ...">03</div>
+                <div class="inline-block size-24 rounded-2xl bg-pink-400 absolute top-0 left-60  ...">02</div>
+                <div class="inline-block size-24 rounded-2xl bg-pink-500 absolute top-0 left-80 ...">01</div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

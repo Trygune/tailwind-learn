@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <title>Tailwind</title>
+</head>
+
+<body>
+    <h1 class="text-3xl font-bold">Flexbox & Grid</h1>
+    <section class="p-5">
+        <div>
+            <h2 class="text-2xl">order</h2>
+            <hr>
+            <div class="flex justify-between">
+                <div class="order-4 bg-pink-300 p-5 m-5">01</div>
+                <div class="order-2 bg-pink-300 p-5 m-5">02</div>
+                <div class="order-1 bg-pink-300 p-5 m-5">03</div>
+                <div class="order-3 bg-pink-300 p-5 m-5">04</div>
+            </div>
+            <hr>
+            <div class="flex justify-between">
+                <div class="order-last bg-pink-300 p-5 m-5">01</div>
+                <div class="bg-pink-300 p-5 m-5">02</div>
+                <div class="order-first bg-pink-300 p-5 m-5">03</div>
+                <div class="bg-pink-300 p-5 m-5">04</div>
+            </div>
+        </div>
+        <h1 class="text-2xl font-bold">grid-template-columns</h1>
+        <br>
+        <div>
+            <h2 class="text-2xl">Specifying the grid columns</h2>
+            <hr>
+            <div class="grid grid-cols-3 gap-4">
+                <div class="bg-pink-300 p-5 m-5">01</div>
+                <div class="bg-pink-300 p-5 m-5">02</div>
+                <div class="bg-pink-300 p-5 m-5">03</div>
+                <div class="bg-pink-300 p-5 m-5">04</div>
+                <div class="bg-pink-300 p-5 m-5">11</div>
+                <div class="bg-pink-300 p-5 m-5">12</div>
+                <div class="bg-pink-300 p-5 m-5">13</div>
+                <div class="bg-pink-300 p-5 m-5">14</div>
+                <div class="bg-pink-300 p-5 m-5">21</div>
+                <div class="bg-pink-300 p-5 m-5">22</div>
+                <div class="bg-pink-300 p-5 m-5">23</div>
+            </div>
+        </div>
+        <div>
+            <h2 class="text-2xl">Implementing a subgrid</h2>
+            <hr>
+            <div class="grid grid-cols-4 gap-1">
+                <div class="bg-pink-300 p-5 m-5">01</div>
+                <div class="bg-pink-300 p-5 m-5">02</div>
+                <div class="bg-pink-300 p-5 m-5">03</div>
+                <div class="bg-pink-300 p-5 m-5">04</div>
+                <div class="bg-pink-300 p-5 m-5">11</div>
+                <div class="bg-pink-300 p-5 m-5">12</div>
+                <div class="bg-pink-300 p-5 m-5">13</div>
+                <div class="bg-pink-300 p-5 m-5">14</div>
+                <div class="bg-pink-300 p-5 m-5">21</div>
+                <div class="bg-pink-300 p-5 m-5">22</div>
+                <div class="col-span-2 grid grid-cols-subgrid gap-2">
+                    <div class="col-start-2 bg-pink-300 p-5 m-5">30</div>
+                </div>
+            </div>
+        </div>
+        <h1 class="text-2xl font-bold">grid-columns</h1>
+        <br>
+        <div>
+            <h2 class="text-2xl">Spanning columns</h2>
+            <hr>
+            <div class="grid grid-cols-3 gap-5">
+                <div class="bg-pink-300 p-5 m-5">1</div>
+                <div class="bg-pink-300 p-5 m-5">2</div>
+                <div class="bg-pink-300 p-5 m-5">3</div>
+                <div class="col-span-2 bg-pink-300 p-5 m-5">4&5</div>
+                <div class="bg-pink-300 p-5 m-5">6</div>
+                <div class="bg-pink-300 p-5 m-5">7</div>
+                <div class="col-span-2 bg-pink-300 p-5 m-5">8&9</div>
+            </div>
+        </div>
+        <div>
+            <h2 class="text-2xl">Starting and ending lines</h2>
+            <hr>
+            <div class="grid grid-cols-6 gap-2">
+                <div class="col-span-2 col-start-3 bg-pink-300 p-5 m-5">1</div>
+                <div class="col-start-1 bg-pink-300 p-5 m-5">2</div>
+                <div class="col-start-1 col-end-5 bg-pink-300 p-5 m-5">3</div>
+                <div class="col-span-2 col-start-2 bg-pink-300 p-5 m-5">4&5</div>
+                <div class="col-span-2 col-end-7 bg-pink-300 p-5 m-5">6</div>
+                <div class="col-start-1 col-end-7 bg-pink-300 p-5 m-5">7</div>
+            </div>
+        </div>
+        <h1 class="text-2xl font-bold">grid-template-rows</h1>
+        <br>
+        <div>
+            <h2 class="text-2xl">Specifying the grid rows</h2>
+            <hr>
+            <div class="grid grid-flow-col grid-rows-4 gap-4">
+                <div class="bg-pink-300 p-5 m-5">1</div>
+                <div class="bg-pink-300 p-5 m-5">2</div>
+                <div class="bg-pink-300 p-5 m-5">3</div>
+                <div class="bg-pink-300 p-5 m-5">4</div>
+                <div class="bg-pink-300 p-5 m-5">5</div>
+                <div class="bg-pink-300 p-5 m-5">6</div>
+                <div class="bg-pink-300 p-5 m-5">7</div>
+                <div class="bg-pink-300 p-5 m-5">8</div>
+                <div class="bg-pink-300 p-5 m-5">9</div>
+            </div>
+        </div>
+        <div>
+            <h2 class="text-2xl">Implementing a subgrid</h2>
+            <hr>
+            <div class="grid grid-flow-col grid-rows-4 gap-4">
+                <div class="bg-pink-300 p-5 m-5">1</div>
+                <div class="bg-pink-300 p-5 m-5">2</div>
+                <div class="bg-pink-300 p-5 m-5">3</div>
+                <div class="bg-pink-300 p-5 m-5">4</div>
+                <div class="bg-pink-300 p-5 m-5">5</div>
+                <div class="row-span-3 grid grid-rows-subgrid gap-2">
+                    <div class="row-start-2 bg-pink-300 p-5 m-5">6</div>
+                </div>
+                <div class="bg-pink-300 p-5 m-5">7</div>
+                <div class="bg-pink-300 p-5 m-5">8</div>
+            </div>
+        </div>
+        <h1 class="text-2xl font-bold">grid-rows</h1>
+        <br>
+        <div>
+            <h2 class="text-2xl">Spanning rows</h2>
+            <hr>
+            <div class="grid grid-flow-col grid-rows-3 gap-4">
+                <div class="row-span-3 bg-pink-300 p-5 m-5">1</div>
+                <div class="col-span-2 bg-pink-300 p-5 m-5">2</div>
+                <div class="col-span-3 row-span-2 bg-pink-300 p-5 m-5">3</div>
+            </div>
+        </div>
+        <div>
+            <h2 class="text-2xl">Starting and ending lines</h2>
+            <hr>
+            <div class="grid grid-flow-col grid-rows-5 gap-2">
+                <div class="row-span-3 row-start-2 bg-pink-300 p-5 m-5">1</div>
+                <div class="row-span-2 row-end-6 bg-pink-300 p-5 m-5">2</div>
+                <div class="row-start-1 row-end-6 bg-pink-300 p-5 m-5">3</div>
+            </div>
+        </div>
+        <h1 class="text-2xl font-bold">grid-rows</h1>
+        <p>auto-cols-max</p>
+        <p>auto-rows-min</p>
+        <br>
+        <div>
+            <h2 class="text-2xl">flow-col-dense</h2>
+            <hr>
+            <div class="grid grid-flow-col-dense grid-cols-4 grid-rows-4 gap-2">
+                <div class="row-span-2 bg-pink-300 p-5 m-5">1</div>
+                <div class="row-span-3 bg-pink-300 p-5 m-5">2</div>
+                <div class="bg-pink-300 p-5 m-5">3</div>
+                <div class="bg-pink-300 p-5 m-5">11</div>
+                <div class="bg-pink-300 p-5 m-5">12</div>
+                <div class="bg-pink-300 p-5 m-5">13</div>
+            </div>
+            <h2 class="text-2xl">flow-row-dense</h2>
+            <hr>
+            <div class="grid grid-flow-row-dense grid-cols-4 grid-rows-4 gap-2">
+                <div class="col-span-2 bg-pink-300 p-5 m-5">21</div>
+                <div class="col-span-3 bg-pink-300 p-5 m-5">22</div>
+                <div class="bg-pink-300 p-5 m-5">23</div>
+                <div class="bg-pink-300 p-5 m-5">31</div>
+                <div class="bg-pink-300 p-5 m-5">32</div>
+                <div class="bg-pink-300 p-5 m-5">33</div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

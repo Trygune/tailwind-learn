@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <title>Tailwind</title>
+</head>
+
+<body>
+    <h1 class="text-3xl font-bold">align-content</h1>
+    <section class="p-5">
+        <div>
+            <h2 class="text-2xl">strat</h2>
+            <hr>
+            <div class="grid h-56 grid-cols-3 content-start gap-4">
+                <div class="bg-pink-300 p-5">01</div>
+                <div class="bg-pink-300 p-5">02</div>
+                <div class="bg-pink-300 p-5">03</div>
+                <div class="bg-pink-300 p-5">04</div>
+            </div>
+            <h2 class="text-2xl">center</h2>
+            <hr>
+            <div class="grid h-56 grid-cols-3 content-center gap-4">
+                <div class="bg-pink-300 p-5">01</div>
+                <div class="bg-pink-300 p-5">02</div>
+                <div class="bg-pink-300 p-5">03</div>
+                <div class="bg-pink-300 p-5">04</div>
+            </div>
+            <h2 class="text-2xl">end</h2>
+            <hr>
+            <div class="grid h-56 grid-cols-3 content-end gap-4">
+                <div class="bg-pink-300 p-5">01</div>
+                <div class="bg-pink-300 p-5">02</div>
+                <div class="bg-pink-300 p-5">03</div>
+                <div class="bg-pink-300 p-5">04</div>
+            </div>
+            <h2 class="text-2xl">Space between</h2>
+            <hr>
+            <div class="grid h-56 grid-cols-3 content-between gap-4">
+                <div class="bg-pink-300 p-5">01</div>
+                <div class="bg-pink-300 p-5">02</div>
+                <div class="bg-pink-300 p-5">03</div>
+                <div class="bg-pink-300 p-5">04</div>
+            </div>
+            <h2 class="text-2xl">Space around</h2>
+            <hr>
+            <div class="grid h-56 grid-cols-3 content-around gap-4">
+                <div class="bg-pink-300 p-5">01</div>
+                <div class="bg-pink-300 p-5">02</div>
+                <div class="bg-pink-300 p-5">03</div>
+                <div class="bg-pink-300 p-5">04</div>
+            </div>
+            <h2 class="text-2xl">Space evenly</h2>
+            <hr>
+            <div class="grid h-56 grid-cols-3 content-evenly gap-4">
+                <div class="bg-pink-300 p-5">01</div>
+                <div class="bg-pink-300 p-5">02</div>
+                <div class="bg-pink-300 p-5">03</div>
+                <div class="bg-pink-300 p-5">04</div>
+            </div>
+            <h2 class="text-2xl">Space stretch</h2>
+            <hr>
+            <div class="grid h-56 grid-cols-3 content-stretch gap-4">
+                <div class="bg-pink-300 p-5">01</div>
+                <div class="bg-pink-300 p-5">02</div>
+                <div class="bg-pink-300 p-5">03</div>
+                <div class="bg-pink-300 p-5">04</div>
+            </div>
+            <h2 class="text-2xl">Space normal</h2>
+            <hr>
+            <div class="grid h-56 grid-cols-3 content-normal gap-4">
+                <div class="bg-pink-300 p-5">01</div>
+                <div class="bg-pink-300 p-5">02</div>
+                <div class="bg-pink-300 p-5">03</div>
+                <div class="bg-pink-300 p-5">04</div>
+            </div>
+        </div>
+        <h1 class="text-2xl font-bold">align-items</h1>
+        <br>
+        <div>
+            <h2 class="text-2xl">Stretch</h2>
+            <hr>
+            <div class="flex items-stretch">
+                <div class="bg-pink-300 py-72 m-0.5">01</div>
+                <div class="bg-pink-300 py-5 m-0.5">02</div>
+                <div class="bg-pink-300 py-1 m-0.5">03</div>
+                <div class="bg-pink-300 py-16 m-0.5">04</div>
+            </div>
+            <h2 class="text-2xl">start</h2>
+            <hr>
+            <div class="flex items-start">
+                <div class="bg-pink-300 py-72 m-0.5">01</div>
+                <div class="bg-pink-300 py-5 m-0.5">02</div>
+                <div class="bg-pink-300 py-1 m-0.5">03</div>
+                <div class="bg-pink-300 py-16 m-0.5">04</div>
+            </div>
+            <h2 class="text-2xl">end</h2>
+            <hr>
+            <div class="flex items-end">
+                <div class="bg-pink-300 py-72 m-0.5">01</div>
+                <div class="bg-pink-300 py-5 m-0.5">02</div>
+                <div class="bg-pink-300 py-1 m-0.5">03</div>
+                <div class="bg-pink-300 py-16 m-0.5">04</div>
+            </div>
+            <h2 class="text-2xl">baseline</h2>
+            <hr>
+            <div class="flex items-baseline">
+                <div class="bg-pink-300 py-72 m-0.5">01</div>
+                <div class="bg-pink-300 py-5 m-0.5">02</div>
+                <div class="bg-pink-300 py-1 m-0.5">03</div>
+                <div class="bg-pink-300 py-16 m-0.5">04</div>
+            </div>
+            <h2 class="text-2xl">baseline last</h2>
+            <hr>
+            <div class="mx-auto w-3/4">
+                <div class="grid grid-cols-[1fr_auto] items-baseline-last">
+                    <div>
+                        <img class="size-16" src="img/img.jpg" />
+                        <h4>Spencer Sharp</h4>
+                        <p>Working on the future of astronaut recruitment at Space Recruit.</p>
+                    </div>
+                    <p>spacerecruit.com</p>
+                </div>
+                <div class="grid grid-cols-[1fr_auto] items-baseline-last">
+                    <div>
+                        <img class="size-10" src="img/img.jpg" />
+                        <h4>Spencer Sharp</h4>
+                        <p>Working on the future of astronaut recruitment at Space Recruit.Working on the future of
+                            astronaut recruitment at Space Recruit.Working on the future of astronaut recruitment at
+                            Space
+                            Recruit</p>
+                    </div>
+                    <p>spacerecruit.com</p>
+                </div>
+            </div>
+            <h2 class="text-2xl">align self</h2>
+            <hr>
+            <div class="flex items-stretch">
+                <div class="self-auto bg-pink-300 py-72 m-0.5">01</div>
+                <div class="self-center bg-pink-300 py-5 m-0.5">02</div>
+                <div class="self-end bg-pink-300 py-1 m-0.5">03</div>
+                <div class="self-start bg-pink-300 py-16 m-0.5">04</div>
+                <div class="self-stretch bg-pink-300 py-16 m-0.5">04</div>
+                <div class="self-baseline bg-pink-300 py-1 m-0.5">03</div>
+                <div class="self-baseline bg-pink-300 py-16 m-0.5">04</div>
+                <div class="mx-auto w-3/4">
+                    <div class="grid grid-cols-[1fr_auto]">
+                        <div>
+                            <img class="size-16" src="img/img.jpg" />
+                            <h4>Spencer Sharp</h4>
+                            <p class="self-baseline-last">Working on the future of astronaut recruitment at Space
+                                Recruit.</p>
+                        </div>
+                        <p class="self-baseline-last">spacerecruit.com</p>
+                    </div>
+                    <div class="grid grid-cols-[1fr_auto]">
+                        <div>
+                            <img class="size-10" src="img/img.jpg" />
+                            <h4>Spencer Sharp</h4>
+                            <p class="self-baseline-last">Working on the future of astronaut recruitment at Space
+                                Recruit.Working on the future of
+                                astronaut recruitment at Space Recruit.Working on the future of astronaut recruitment at
+                                Space
+                                Recruit</p>
+                        </div>
+                        <p class="self-baseline-last">spacerecruit.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 class="text-2xl font-bold">place-content</h1>
+        <br>
+        <div>
+            <h2 class="text-2xl">start</h2>
+            <hr>
+            <div class="grid h-96 grid-cols-2 place-content-start place-items-start gap-4">
+                <div class="bg-pink-300">01</div>
+                <div class="bg-pink-300">02</div>
+                <div class="bg-pink-300">03</div>
+                <div class="bg-pink-300">04</div>
+            </div>
+            <h2 class="text-2xl">end</h2>
+            <hr>
+            <div class="grid h-96 grid-cols-2 place-content-end place-items-end gap-4">
+                <div class="bg-pink-300">01</div>
+                <div class="bg-pink-300">02</div>
+                <div class="bg-pink-300">03</div>
+                <div class="bg-pink-300">04</div>
+            </div>
+            <h2 class="text-2xl">Center</h2>
+            <hr>
+            <div class="grid h-96 grid-cols-2 place-content-center place-items-center gap-4">
+                <div class="bg-pink-300">01</div>
+                <div class="bg-pink-300">02</div>
+                <div class="bg-pink-300">03</div>
+                <div class="bg-pink-300">04</div>
+            </div>
+            <h2 class="text-2xl">between</h2>
+            <hr>
+            <div class="grid h-96 grid-cols-2 place-content-between place-items-center gap-4">
+                <div class="bg-pink-300">01</div>
+                <div class="bg-pink-300">02</div>
+                <div class="bg-pink-300">03</div>
+                <div class="bg-pink-300">04</div>
+            </div>
+            <h2 class="text-2xl">around</h2>
+            <hr>
+            <div class="grid h-96 grid-cols-2 place-content-around place-items-center gap-4">
+                <div class="bg-pink-300">01</div>
+                <div class="bg-pink-300">02</div>
+                <div class="bg-pink-300">03</div>
+                <div class="bg-pink-300">04</div>
+            </div>
+            <h2 class="text-2xl">evenly</h2>
+            <hr>
+            <div class="grid h-96 grid-cols-2 place-content-evenly place-items-center gap-4">
+                <div class="bg-pink-300">01</div>
+                <div class="bg-pink-300">02</div>
+                <div class="bg-pink-300">03</div>
+                <div class="bg-pink-300">04</div>
+            </div>
+            <h2 class="text-2xl">stretch</h2>
+            <hr>
+            <div class="grid h-96 grid-cols-2 place-content-stretch place-items-stretch gap-4">
+                <div class="bg-pink-300">01</div>
+                <div class="bg-pink-300">02</div>
+                <div class="bg-pink-300">03</div>
+                <div class="bg-pink-300">04</div>
+            </div>
+            <h2 class="text-2xl">self</h2>
+            <hr>
+            <div class="grid h-96 grid-cols-3 gap-4">
+                <div class="bg-pink-300 place-self-auto">01</div>
+                <div class="bg-pink-300 place-self-start">02</div>
+                <div class="bg-pink-300 place-self-end">03</div>
+                <div class="bg-pink-300 place-self-center">04</div>
+                <div class="bg-pink-300 place-self-stretch">05</div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

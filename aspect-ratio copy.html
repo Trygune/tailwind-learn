@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <title>Tailwind</title>
+</head>
+
+<body>
+    <h1 class="text-3xl font-bold">Typography</h1>
+    <section class="p-5">
+        <div class="bg-amber-200">
+            <h2 class="text-2xl">color</h2>
+            <hr>
+            <p class="text-blue-600 dark:text-sky-400">The quick brown fox...</p>
+            <p class="text-blue-600/75 dark:text-sky-400/75">The quick brown fox...</p>
+            <p class="text-blue-600/50 dark:text-sky-400/50">The quick brown fox...</p>
+            <p class="text-blue-600/25 dark:text-sky-400/25">The quick brown fox...</p>
+            <p class="text-black dark:text-sky-400/25">The quick brown fox...</p>
+            <p class="text-white dark:text-sky-400/25">The quick brown fox...</p>
+            <p class="text-transparent dark:text-sky-400/25 bg-amber-700">The quick brown fox...</p>
+        </div>
+        <div>
+            <p class="underline">The quick brown fox...</p>
+            <p class="overline">The quick brown fox...</p>
+            <p class="line-through">The quick brown fox...</p>
+            <p>
+                I’m Derek, an astro-engineer based in Tattooine. I like to build X-Wings
+                at <span class="underline decoration-sky-500">My Company, Inc</span>. Outside
+                of work, I like to <span class="underline decoration-pink-500">watch pod-racing</span>
+                and have <span class="underline decoration-indigo-500">light-saber</span> fights.
+            </p>
+            <br>
+            <p class="underline decoration-solid">The quick brown fox...</p>
+            <p class="underline decoration-double">The quick brown fox...</p>
+            <p class="underline decoration-dotted">The quick brown fox...</p>
+            <p class="underline decoration-dashed">The quick brown fox...</p>
+            <p class="underline decoration-wavy">The quick brown fox...</p>
+            <br>
+            <p class="underline decoration-1">The quick brown fox...</p>
+            <p class="underline decoration-2">The quick brown fox...</p>
+            <p class="underline decoration-4">The quick brown fox...</p>
+            <br>
+            <p class="underline underline-offset-1">The quick brown fox...</p>
+            <p class="underline underline-offset-2">The quick brown fox...</p>
+            <p class="underline underline-offset-4">The quick brown fox...</p>
+            <p class="underline underline-offset-8">The quick brown fox...</p>
+            <br>
+            <p class="uppercase">The quick brown fox ...</p>
+            <p class="lowercase">The quick brown fox ...</p>
+            <p class="capitalize">The quick brown fox ...</p>
+            <p class="normal-case">The quick brown fox ...</p>
+            <br>
+            <p class="truncate">The longest word in any of the major Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Atque vero obcaecati nesciunt ipsam veniam voluptatem hic incidunt commodi cupiditate sed, aliquid
+                iste sapiente officia rerum ad quis qui quaerat facilis? Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Nisi molestiae saepe maiores asperiores doloribus, dolor adipisci ipsam sunt,
+                cupiditate pariatur dolorum rem velit recusandae porro veritatis delectus magnam dicta voluptatem. Lorem
+                ipsum dolor sit, amet consectetur adipisicing elit. Nisi, perferendis? Esse quae soluta dignissimos,
+                inventore dicta nobis porro adipisci perspiciatis. Commodi blanditiis adipisci, voluptates eligendi
+                consequatur exercitationem optio totam accusantium. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Dolor dolorum ad quas, alias consequatur labore error quaerat tempora, accusantium nemo dicta
+                impedit! Ullam beatae animi accusantium alias voluptatibus quasi totam.</p>
+            <br>
+            <p class="text-ellipsis">The longest word in any of the major Lorem ipsum dolor sit amet consectetur
+                adipisicing
+                elit. Atque vero obcaecati nesciunt ipsam veniam voluptatem hic incidunt commodi cupiditate sed, aliquid
+                iste sapiente officia rerum ad quis qui quaerat facilis? Lorem ipsum dolor sit amet, consectetur
+                adipisicing
+                elitNisimolestiaesaepemaioresasperioresdoloribusdoloradipisciipsamsuntcupiditatepariaturdolorumremvelitrecusandaeporroveritatisdelectusmagnamdictavoluptatemLorem
+                ipsum dolor sit, amet consectetur adipisicing elit. Nisi, perferendis? Esse quae soluta dignissimos,
+                inventore dicta nobis porro adipisci perspiciatis. Commodi blanditiis adipisci, voluptates eligendi
+                consequatur exercitationem optio totam accusantium. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Dolor dolorum ad quas, alias consequatur labore error quaerat tempora, accusantium nemo dicta
+                impedit! Ullam beatae animi accusantium alias voluptatibus quasi totam.</p>
+            <br>
+            <p class="overflow-hidden text-clip">The longest word in any of the major Lorem ipsum dolor sit amet
+                consecteturadipisicingelit. Atque vero obcaecati nesciunt ipsam veniam voluptatem hic incidunt commodi
+                cupiditate sed, aliquid
+                iste sapiente officia rerum ad quis qui quaerat facilis? Lorem ipsum dolor sit amet, consectetur
+                adipisicing
+                elitNisimolestiaesaepemaioresasperioresdoloribusdoloradipisciipsamsuntcupiditatepariaturdolorumremvelitrecusandaeporroveritatisdelectusmagnamdictavoluptatemLorem
+                ipsum dolor sit, amet consectetur adipisicing elit. Nisi, perferendis? Esse quae soluta dignissimos,
+                inventore dicta nobis porro adipisci perspiciatis. Commodi blanditiis adipisci, voluptates eligendi
+                consequatur exercitationem optio totam accusantium. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Dolor dolorum ad quas, alias consequatur labore error quaerat tempora, accusantium nemo dicta
+                impedit! Ullam beatae animi accusantium alias voluptatibus quasi totam.</p>
+        </div>
+        <br>
+        <div>
+            <article class="text-wrap w-80 border">
+                <h3 class="text-xl">Beloved Manhattan soup stand closes</h3>
+                <p>New Yorkers are facing the winter chill Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptates ipsa autem aperiam numquam inventore voluptate rem dolorem natus cupiditate placeat. Odio
+                    illum nemo sint maiores dolore corporis debitis distinctio at.</p>
+            </article>
+            <article class="text-nowrap w-80 border">
+                <h3>Beloved Manhattan soup stand closes</h3>
+                <p>New Yorkers are facing the winter chill Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptates ipsa autem aperiam numquam inventore voluptate rem dolorem natus cupiditate placeat. Odio
+                    illum nemo sint maiores dolore corporis debitis distinctio at.</p>
+            </article>
+            <article class="text-balance w-80 border">
+                <h3 class="text-xl">Beloved Manhattan soup stand closes</h3>
+                <p>New Yorkers are facing the winter chill Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptates ipsa autem aperiam numquam inventore voluptate rem dolorem natus cupiditate placeat. Odio
+                    illum nemo sint maiores dolore corporis debitis distinctio at. Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Libero similique impedit, ullam explicabo, commodi incidunt laborum
+                    cumque beatae deleniti maxime a rerum unde iste. Impedit sint error nisi tenetur reprehenderit.</p>
+            </article>
+            <article class="text-pretty w-80 border">
+                <h3>Beloved Manhattan soup stand closes</h3>
+                <p>New Yorkers are facing the winter chill Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptates ipsa autem aperiam numquam inventore voluptate rem dolorem natus cupiditate placeat. Odio
+                    illum nemo sint maiores dolore corporis debitis distinctio at.</p>
+            </article>
+        </div>
+        <br>
+        <div>
+            <p class="indent-8">So I started to walk into the water Lorem ipsum dolor, sit amet consectetur adipisicing
+                elit. Quidem omnis harum cum maxime recusandae, temporibus aspernatur excepturi modi molestiae
+                praesentium corporis iste ratione, voluptate consectetur eaque atque deleniti vel sit! Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Possimus ratione soluta sed alias numquam excepturi iusto commodi
+                cum, quos repellendus nobis quisquam fuga inventore! Deleniti, illo. Error maxime non numquam.</p>
+            <p class="-indent-8">So I started to walk into the water Lorem ipsum dolor, sit amet consectetur adipisicing
+                elit. Quidem omnis harum cum maxime recusandae, temporibus aspernatur excepturi modi molestiae
+                praesentium corporis iste ratione, voluptate consectetur eaque atque deleniti vel sit! Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Possimus ratione soluta sed alias numquam excepturi iusto commodi
+                cum, quos repellendus nobis quisquam fuga inventore! Deleniti, illo. Error maxime non numquam.</p>
+        </div>
+        <br>
+        <div>
+
+            <div class="w-full border p-0.5"> <span class="inline-block align-baseline">The quick brown fox...</span>
+            </div>
+            <br>
+            <div class="w-full border p-0.5"> <span class="inline-block align-top">The quick brown fox...</span>
+            </div>
+            <br>
+            <div class="w-full border p-0.5"> <span class="inline-block align-middle">The quick brown fox...</span>
+            </div>
+            <br>
+            <div class="w-full border p-0.5"> <span class="inline-block align-bottom">The quick brown fox...</span>
+            </div>
+            <br>
+            <div class="w-full border p-0.5"> <span class="inline-block align-text-bottom">The quick brown fox...</span>
+            </div>
+            <br>
+            <div class="w-full border p-0.5"> <span class="inline-block align-text-top">The quick brown fox...</span>
+            </div>
+            <br>
+            <div class="w-full border p-0.5"> <span class="inline-block align-sub">The quick brown fox...</span>
+            </div>
+            <br>
+            <div class="w-full border p-0.5"> <span class="inline-block align-super">The quick brown fox...</span>
+            </div>
+        </div>
+        <br>
+        <div>
+            <p class="overflow-auto whitespace-nowrap">Hey everyone!
+                It's almost 2022 and we still don't know if there are aliens living among us, or do we? Maybe the person
+                writing this is an alien.
+                You will never know.</p>
+            <br>
+            <p class="overflow-auto whitespace-pre">Hey everyone!
+                It's almost 2022 and we still don't know if there are aliens living among us, or do we? Maybe the person
+                writing this is an alien.
+                You will never know.</p>
+            <br>
+            <p class="whitespace-pre-line">Hey everyone!
+                It's almost 2022 and we still don't know if there are aliens living among us, or do we? Maybe the person
+                writing this is an alien.
+                You will never know.</p>
+            <br>
+            <p class="whitespace-pre-wrap">Hey everyone!
+                It's almost 2022 and we still don't know if there are aliens living among us, or do we? Maybe the person
+                writing this is an alien.
+                You will never know.</p>
+            <br>
+            <p class="whitespace-break-spaces">Hey everyone!
+                It's almost 2022 and we still don't know if there are aliens living among us, or do we? Maybe the person
+                writing this is an alien.
+                You will never know.</p>
+        </div>
+        <br>
+        <div class="w-60">
+            <p class="break-normal">The longest word in any of the major Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Voluptatum sed deleniti at aut
+                pariaturrecusandaepariaturrecusandaepariaturrecusandaepariaturrecusandaepariaturrecusandaepariaturrecusandaepariaturrecusandaepariaturrecusandaepariaturrecusandaepariaturrecusandaepariaturrecusandaepariaturrecusandaepariaturrecusandaepariaturrecusandae
+                illum, dolorem, ratione nihil consequuntur, error maiores atque non soluta ex iste dolores a quo?</p>
+            <br>
+            <p class="break-all">The longest word in any of the major Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Voluptatum sed deleniti at aut
+                pariaturrecusandaepariaturrecusandaepariaturrecusandaepariaturrecusandaepariaturrecusandaepariaturrecusandaepariaturrecusandaepariaturrecusandaepariaturrecusandaepariaturrecusandaepariaturrecusandaepariaturrecusandaepariaturrecusandaepariaturrecusandae
+                illum, dolorem, ratione nihil consequuntur, error maiores atque non soluta ex iste dolores a quo?</p>
+            <br>
+            <p class="break-keep">The longest word in any of the major Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Voluptatum sed deleniti at aut
+                pariaturrecusandaepariaturrecusandaepariaturrecusandaepariaturrecusandaepariaturrecusandaepariaturrecusandaepariaturrecusandaepariaturrecusandaepariaturrecusandaepariaturrecusandaepariaturrecusandaepariaturrecusandaepariaturrecusandaepariaturrecusandae
+                illum, dolorem, ratione nihil consequuntur, error maiores atque non soluta ex iste dolores a quo?</p>
+            <br>
+        </div>
+        <div>
+            <div class="flex max-w-sm">
+                <img class="size-16 rounded-full" src="/img/profile.jpg" />
+                <div class="wrap-break-word">
+                    <p class="font-medium">Jay Riemenschneider</p>
+                    <p>jason.riemenschneider@vandelayindustries.com</p>
+                </div>
+            </div>
+            <div class="flex max-w-sm">
+                <img class="size-16 rounded-full" src="/img/profile.jpg" />
+                <div class="wrap-anywhere">
+                    <p class="font-medium">Jay Riemenschneider</p>
+                    <p>jason.riemenschneider@vandelayindustries.com</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="w-60 border-0 p-5">
+            <p class="break-keep">The longest word in any of the major Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.
+                <br>Voluptatum sed deleniti at aut
+                pariaturrecusandaepariaturrecusanda&shy;epariaturrecusandaepariaturrecusandaepar&shy;iaturrecusandaepariaturrecusandaepariatu&shy;rrecusandaepariaturrecusandaepariaturrec&shy;usandaepariaturrecusandaepariaturrecusan&shy;daepariaturrecusandaepariaturrecusandaepariaturrecusandae
+                <br>
+                illum, dolorem, ratione nihil consequuntur, error maiores atque non soluta ex iste dolores a quo?</p>
+        </div>
+        <div>
+            <h3 class="text-2xl">content</h3>
+            <hr>
+            <p>Higher resolution means more than just a better-quality image. With a
+                Retina 6K display, <a class="text-blue-600 after:content-['_↗']" href="...">
+                    Pro Display XDR</a> gives you nearly 40 percent more screen real estate than
+                a 5K display.</p>
+        </div>
+    </section>
+</body>
+
+</html>

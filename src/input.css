@@ -1,4 +1,11 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: BNazanin;
+  src: url(../fonts/B-NAZANIN.TTF);
+}
+
 @theme {
   --ta-2: 2/4;
+  --font-bnazanin: "B Nazanin", sans-serif
 }
